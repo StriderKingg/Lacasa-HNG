@@ -36,7 +36,25 @@ body {
 }
 
 #view-suites {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 58px;
+    position: absolute;
+    width: 277px;
+    height: 69px;
+    left: 144px;
+    top: 676px;
+    background: #0DD24A;
+    border: 1px solid #0DD24A;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+/*---these are text properties in the button---*/
+
+#suites {
+    position: absolute;
     width: 161px;
     height: 39px;
     left: 58px;
@@ -44,16 +62,15 @@ body {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 39px;
-    text-align: center;
     /* identical to box height */
     letter-spacing: 0.095em;
     text-transform: uppercase;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     /* Inside Auto Layout */
-    flex: none;
+    flex: inherit;
     order: 0;
     align-self: center;
     margin: 10px 0px;
