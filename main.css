@@ -36,7 +36,25 @@ body {
 }
 
 #view-suites {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 58px;
+    position: absolute;
+    width: 277px;
+    height: 69px;
+    left: 144px;
+    top: 676px;
+    background: #0DD24A;
+    border: 1px solid #0DD24A;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+/*---these are text properties in the button---*/
+
+#suites {
+    position: absolute;
     width: 161px;
     height: 39px;
     left: 58px;
@@ -44,45 +62,58 @@ body {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 39px;
-    text-align: center;
     /* identical to box height */
     letter-spacing: 0.095em;
     text-transform: uppercase;
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     /* Inside Auto Layout */
-    flex: none;
+    flex: inherit;
     order: 0;
     align-self: center;
     margin: 10px 0px;
 }
 
 
-}
-
 /*--- navigation bar ---*/
+
 .navbar {
     background: white;
 }
+
 .nav-link,
 .navbar-brand {
     color: black;
     cursor: pointer;
     font-style: normal;
 }
+
 .nav-link {
     margin-right: 1em !important;
 }
+
 .nav-link:hover {
     color: #000;
 }
+
 .navbar-collapse {
     justify-content: flex-end;
 }
 
+#navbar-logo {
+    position: absolute;
+    width: 35.76px;
+    height: 35.76px;
+    left: 210.24px;
+    top: 46px;
+    background: #0DD24A;
+}
+
+
 /* Our Story */
+
 #story {
     position: absolute;
     width: 111px;
@@ -95,9 +126,9 @@ body {
     font-size: 24px;
     line-height: 39px;
     /* identical to box height */
-    
     color: #999EA3;
 }
+
 #history-heading {
     position: absolute;
     width: 386px;
@@ -111,17 +142,36 @@ body {
     line-height: 141%;
     text-align: left;
     /* or 68px */
-    
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #333333;
 }
+
+
+/* Rooms/Suites */
+
+#rooms {
+    /* Rooms/Suites */
+    position: absolute;
+    width: 382px;
+    height: 68px;
+    left: 144px;
+    top: 2286px;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 141%;
+    /* identical to box height, or 68px */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color: #E5E5E5;
+    color: black;
     text-align: center;
+    padding: 60px, 0px;
 }
